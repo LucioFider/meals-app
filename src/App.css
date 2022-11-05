@@ -48,7 +48,7 @@ html {
   /* --backgroundColor: var(--white); */
   --backgroundColor: var(--grey-100);
   --textColor: var(--grey-900);
-  --borderRadius: 0.25rem;
+  --borderRadius: 0.8rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
   --max-width: 1120px;

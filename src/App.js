@@ -1,13 +1,15 @@
 import "./App.css";
 import { Favorites, Search, Meals, Modal } from "./components";
+import { useGlobalContext } from "./context/context";
 
 function App() {
+  const { showModal, favorites } = useGlobalContext();
   return (
     <main>
-      {/* <Search /> */}
-      {/* <Favorites /> */}
+      <Search />
+      {favorites.length > 0 && <Favorites />}
       <Meals />
-      {/* <Modal /> */}
+      {showModal && <Modal />}
     </main>
   );
 }
